@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddBlogs</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <%- include("nav") %>
+    <section class="bform">
+        <form action="/blog/create" method="post" id="blogForm">
+            <label for="title">Title : </label>
+            <input type="text" name="title" id="title" ><br><br>
+            <label for="content">Content : </label>
+            <input type="text" name="content" id="content"><br><br>
+            <label for="category">Category : </label>
+            <input type="text" name="category" id="category"><br><br>
+            <label for="image">Image : </label>
+            <input type="url" name="image" id="image"><br><br>
+            <input type="submit" value="Submit" class="blogsub" id="add">
+        </form>
+    </section>
+</body>
+</html>

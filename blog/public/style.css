@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    padding: 20px;
+    background-color: crimson;
+}
+header .logo>a{
+    font-size: 20px;
+    padding-left: 25px;
+    color: black;
+    letter-spacing: 1px;
+}
+header nav ul li a{
+    padding: 5px;
+    margin:  25px;
+    color: black;
+    
+}
+header nav ul li a:hover{
+    color: white;
+}
+.sform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.sform form{
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #ffffffc5;
+    box-shadow: 0px 0px 5px rgba(99, 99, 99, 0.662);
+}
+.sform form input{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.603);
+    font-size: 16px;
+}
+.sform form label{
+    margin-bottom: 5px;
+    display: inline-block;
+    font-family: 400;
+}
+.sform form select{
+    font-size: 16px;
+    padding: 5px 10px;;
+}
+.signsub{
+    margin-top: 15px;
+    background-color: crimson;
+}
+.logsub{
+    margin-top: 15px;
+    background-color: crimson;
+}
+.blogsub{
+    margin-top: 15px;
+    background-color: crimson;
+}
+.lform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.lform form{
+    padding: 30px;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(99, 99, 99, 0.662);
+}
+.lform form input{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 16px;
+}
+.lform form label{
+    margin-bottom: 5px;
+    display: inline-block;
+    color: black;
+    font-family: 400;
+}
+
+.bform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.bform form{
+    /* border: 1px solid rgb(185, 185, 185); */
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #ffffffc5;
+    box-shadow: 0px 0px 5px rgba(99, 99, 99, 0.662);
+}
+.bform form input{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 16px;
+}
+.bform form label{
+    margin-bottom: 5px;
+    display: inline-block;
+    color: black;
+    font-family: 400;
+}
+
+.displayblog #parent-box{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    height: 60px;
+    width: 100%;
+    margin-top: 15px;
+}
+.displayblog #parent-box .list{
+    border-radius: 10px;
+    border: 1px solid rgba(75, 70, 70, 0.459);
+    box-shadow: 3px 3px 5px rgba(99, 99, 99, 0.562);
+    margin: 10px 25px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 5px;
+    transform: scale(0.99);
+    transition: all 0.3s;
+}
+.displayblog #parent-box .list:hover{
+    transform: scale(1.02);
+}
+.displayblog #parent-box img{
+    width: 100%;
+}
+.displayblog #parent-box .img{
+    height: 60px;
+    width: 100px;
+    padding: 10px 5px 10px 10px ;
+}
+.displayblog #parent-box .title{
+    font-weight: 400;
+    font-size: 18px;
+}
+.displayblog #parent-box #deletblog, #editblog{
+    font-size: 14px;
+    padding: 5px ;
+    margin: 0px 10px;
+    color: rgb(5, 5, 5);
+    text-shadow: 0px 0px 3px white;
+    letter-spacing: 1px;
+    border: 1px solid rgba(75, 70, 70, 0.459);
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px rgba(99, 99, 99, 0.562);
+}
+.flex{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.filtertab{
+    padding: 15px;
+    border: 1px solid rgba(75, 70, 70, 0.459);
+    border-radius: 0px 0px 12px 12px;
+    box-shadow: 0px 0px 5px rgba(99, 99, 99, 0.562);
+}
+.filtertab .filter{
+    margin: 0px 15px;
+}
+.filtertab .tabs button{
+    font-size: 14px;
+    padding: 5px ;
+    margin: 0px 10px;
+    color: crimson;
+    text-shadow: 0px 0px 3px white;
+    letter-spacing: 1px;
+    border: 1px solid rgba(75, 70, 70, 0.459);
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px rgba(99, 99, 99, 0.562);
+}
+.singleblog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.singleblog #blog{
+    margin: 30px;
+    padding: 15px;
+    background-color:white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px rgba(99, 99, 99, 0.662);
+}
+.singleblog #blog img{
+    width: 500px;
+    height: 300px;
+}
+.singleblog #blog h3{
+    margin: 10px 0px;
+}
+.singleblog #blog #category{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.singleblog #blog #content{
+    margin-bottom: 10px;
+}
+.singleblog #blog #like{
+    margin-bottom: 5px;
+    margin-right: 5px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(136, 136, 136);
+}
+.singleblog #blog #comment #incomment{
+    width: 80%;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(133, 133, 133);
+}
+.singleblog #blog #comment #subcomment{
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(128, 128, 128);
+}
+.search{
+    margin-left: 250px;
+    background-color: #f5f5f5; /* Light gray background */
+    padding: 10px; /* Increased padding for better spacing */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.search form input{
+    padding: 8px 12px; 
+    border-radius: 5px; 
+    border: 1px solid #999;
+    outline: none; 
+    transition: border-color 0.3s ease-in-out;
+}
+.search form input:hover,
+.search form input:focus {
+    border-color: #555; /* Darker border on hover/focus */
+}

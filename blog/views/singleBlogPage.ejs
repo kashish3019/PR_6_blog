@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singleblog</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <%- include("nav") %>
+    <section class="singleblog">
+        <div id="blog"> 
+            <img id="img" src="<%= singleBlog.image %>" >
+            <h3 id="title"><%= singleBlog.title %></h3>
+            <span id="category"><%= singleBlog.category %></span>
+            <p id="content"><%= singleBlog.content %></p>
+            <button id="like">Like</button>
+            <span id="count" >0 </span>
+            <form action="/blog/comment/:id" method="post" id="comment">
+                <input type="text" placeholder="Add a comment" name="text" id="incomment">
+                <input type="submit" value="Submit" id="subcomment">
+            </form>
+        </div>
+    </section>
+</body>
+<script src="/singleblogpage.js"></script>
+</html>
